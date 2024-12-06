@@ -1,12 +1,12 @@
-name: Vanilla Desktop
-id: desktop
+name: Vanilla Desktop tailscale
+id: desktop-image-tailscale
 
 stages:
 - id: build
   base: ghcr.io/vanilla-os/core:dev
   singlelayer: false
   labels:
-    maintainer: Vanilla OS Contributors
+    maintainer: Vanilla OS Contributors dmorab
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
